@@ -68,6 +68,13 @@ body{
   font-size:14.5px;
   margin-top:2px;
 }
+.bio{
+  margin:10px 0 0;
+  font-size:14px;
+  color:var(--fg);
+  line-height:1.55;
+  max-width:44ch;
+}
 .status-line{
   display:flex;
   align-items:center;
