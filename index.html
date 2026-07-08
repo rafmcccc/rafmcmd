@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rafmcccc</title>
+<meta name="description" content="rafmcccc — live Discord status and public repos">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230b0b0b%22/><text x=%2250%22 y=%2270%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22%23f2f2f2%22 font-family=%22sans-serif%22>r</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="page">
+
+  <div class="profile">
+    <div class="avatar-wrap">
+      <img id="avatar" class="avatar skel" alt="" width="84" height="84">
+      <span id="statusDot" class="status-dot"></span>
+    </div>
+    <div class="who">
+      <div class="name" id="displayName">Loading…</div>
+      <div class="handle" id="handle"></div>
+      <div class="status-line">
+        <span class="dot-inline" id="statusDotInline"></span>
+        <span id="statusText">Checking status…</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-card" id="activity"></div>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="https://discord.com/users/1217443106069155841" target="_blank" rel="noopener noreferrer">
+      Discord profile
+    </a>
+    <a class="btn btn-secondary" href="https://github.com/rafmcccc" target="_blank" rel="noopener noreferrer">
+      GitHub profile
+    </a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Public repositories</div>
+    <div class="repos" id="repoList">
+      <div class="skel" style="height:64px;"></div>
+      <div class="skel" style="height:64px;"></div>
+      <div class="skel" style="height:64px;"></div>
+    </div>
+  </div>
+
+  <footer>
+    <span id="clock">--:--:--</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
