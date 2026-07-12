@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>rafmcccc</title>
 <meta name="description" content="rafmcccc — live Discord status and public repos">
+<meta property="og:title" content="rafmcccc">
+<meta property="og:description" content="Live Discord status and public repos">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230b0b0b%22/><text x=%2250%22 y=%2270%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22%23f2f2f2%22 font-family=%22sans-serif%22>r</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +25,9 @@
       <span id="statusDot" class="status-dot"></span>
     </div>
     <div class="who">
-      <div class="name" id="displayName">Loading…</div>
+      <div class="name" id="displayName">Loading...</div>
       <div class="handle" id="handle"></div>
-      <p class="bio" id="bio">Random kid who likes to plays minecraft and tech</p>
+      <p class="bio" id="bio">Random kid who likes to play minecraft and tech</p>
       <div class="status-line">
         <span class="dot-inline" id="statusDotInline"></span>
         <span id="statusText">Checking status…</span>
@@ -34,7 +38,7 @@
   <div class="activity-card" id="activity"></div>
 
   <div class="actions">
-    <a class="btn btn-primary" href="https://discord.com/users/1217443106069155841" target="_blank" rel="noopener noreferrer">
+    <a id="discordProfileLink" class="btn btn-primary" href="https://discord.com/users/1217443106069155841" target="_blank" rel="noopener noreferrer">
       Discord profile
     </a>
     <a class="btn btn-secondary" href="https://github.com/rafmcccc" target="_blank" rel="noopener noreferrer">
@@ -57,6 +61,6 @@
 
 </main>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
