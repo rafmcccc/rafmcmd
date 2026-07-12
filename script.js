@@ -87,9 +87,6 @@ function loadDiscord(){
       document.getElementById("displayName").textContent = displayName;
       document.getElementById("handle").textContent = "@" + user.username;
 
-      // Update Discord profile link to match the fetched user
-      document.getElementById("discordProfileLink").href = "https://discord.com/users/" + user.id;
-
       const status = data.discord_status || "offline";
       const color = STATUS_COLORS[status] || STATUS_COLORS.offline;
       document.getElementById("statusDot").style.background = color;
